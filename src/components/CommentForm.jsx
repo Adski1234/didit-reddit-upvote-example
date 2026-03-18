@@ -2,12 +2,11 @@
 
 import { saveComment } from "@/actions/comments";
 import { useSession } from "next-auth/react";
-import { useEffect, useState } from "react";
-import { useFormState } from "react-dom";
+import { useActionState, useEffect, useState } from "react";
 import { CommentFormButton } from "./CommentFormButton";
 
 export function CommentForm({ postId, parentCommentId }) {
-  const [state, dispatch] = useFormState(saveComment, {
+  const [state, dispatch] = useActionState(saveComment, {
     postId,
     parentCommentId,
   });
