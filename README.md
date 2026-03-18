@@ -1,3 +1,10 @@
+Reflections:
+I enjoyed this until it came to deployment...
+Everything worked fine until I deployed on Vercel when there was an OAuth Error. Turns out i needed to swap the credetials around as I'd be using LocalHost to test. 
+I spent a long time trying to fix things before realising the browser was caching the old auth route, refreshing sorted that.
+
+I thought I'd managed to hit the Page name stetch but applying it for some reason broke OAuth again! I have no idea why but The Vercel Deployment is the previous git commit (I promoted it to production) the final Commit is the broken version.
+
 ## Upvote
 
 Upvote is a Reddit-esque web application that allows users to create posts, upvote and downvote posts, and comment on posts in a multi-threaded, nested list.
