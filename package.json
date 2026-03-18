@@ -2,6 +2,9 @@
   "name": "authjs5",
   "version": "0.1.0",
   "private": true,
+  "overrides": {
+    "eslint": "$eslint"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
